@@ -12,7 +12,8 @@ app.set('views' , 'views') // default
 
 app.use(router)
 
+let PORT = process.env.PORT || 3000
 
-app.listen(3000,(err) => {
+app.listen(PORT,(err) => {
     console.log('server listen on port 3000')
 })
